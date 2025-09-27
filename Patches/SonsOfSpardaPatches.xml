@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  
+  <!-- Make Son of Sparda immune to certain negative traits -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="Wimp"]/conflictingTraits</xpath>
+    <value>
+      <li>SOS_SonOfSparda</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="Frail"]/conflictingTraits</xpath>
+    <value>
+      <li>SOS_SonOfSparda</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraitDef[defName="SlowLearner"]/conflictingTraits</xpath>
+    <value>
+      <li>SOS_SonOfSparda</li>
+    </value>
+  </Operation>
+
+  <!-- Enhance existing weapon stats for Sons of Sparda -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+      <value>
+        <equippedStatOffsets>
+          <MeleeDamageFactor>0.1</MeleeDamageFactor>
+        </equippedStatOffsets>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

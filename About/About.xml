@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>SonsOfSparda.BackstoriesAndTraits</packageId>
+  <name>Sons of Sparda - DMC5 Backstories and Traits</name>
+  <author>YourName</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Adds Dante and Vergil from Devil May Cry 5 as powerful backstories and traits to RimWorld. Includes lore-accurate abilities like Devil Trigger, Son of Sparda heritage, Royal Guard, and Dark Slayer styles. These characters are intentionally overpowered to match their legendary status.
+
+Features:
+- Dante, Vergil, and Nero backstories with detailed lore-accurate abilities
+- Son of Sparda trait for Dante with combat prowess and work laziness
+- Dark Slayer trait for Vergil with power obsession and social isolation
+- Sparda Bloodline trait for Nero with balanced demonic heritage
+- Passive regeneration and entity damage bonuses
+- Complex stat modifications affecting combat, work, social, and survival aspects
+- Player-only backstories to maintain balance
+
+This mod is designed to be lore-accurate and appropriately powerful for player characters only.</description>
+  <modDependencies>
+  </modDependencies>
+  <incompatibleWith>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+</ModMetaData>

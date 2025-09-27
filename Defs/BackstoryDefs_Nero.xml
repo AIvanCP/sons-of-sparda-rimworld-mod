@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- Nero Childhood Backstory -->
+  <BackstoryDef>
+    <defName>DMC_NeroChildhood</defName>
+    <title>orphan with demonic arm</title>
+    <titleShort>devil child</titleShort>
+    <baseDesc>[PAWN_nameDef] grew up as an orphan in Fortuna, unaware of [PAWN_possessive] true heritage as the son of Vergil. [PAWN_possessive] right arm manifested demonic power early, leading to fear and isolation from other children. Despite this, [PAWN_pronoun] developed a strong sense of justice and protection for the innocent, though [PAWN_possessive] emotional nature often led to conflicts with authority figures.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Childhood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>4</Melee>
+      <Shooting>2</Shooting>
+      <Social>1</Social>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <!-- Nero Adult Backstory -->
+  <BackstoryDef>
+    <defName>DMC_NeroAdult</defName>
+    <title>devil bringer</title>
+    <titleShort>devil hunter</titleShort>
+    <baseDesc>[PAWN_nameDef] discovered [PAWN_possessive] true heritage as a descendant of Sparda and learned to harness the power of the Devil Bringer. [PAWN_pronoun] joined the Order of the Sword in Fortuna before becoming an independent devil hunter. [PAWN_possessive] demonic arm grants [PAWN_objective] incredible strength, but [PAWN_possessive] emotional nature and protective instincts sometimes cloud [PAWN_possessive] judgment. Unlike [PAWN_possessive] father and uncle, [PAWN_pronoun] maintains stronger connections to humanity.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Adulthood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>6</Melee>
+      <Shooting>4</Shooting>
+      <Medicine>2</Medicine>
+      <Social>-2</Social>
+    </skillGains>
+    <workDisables>
+      <li>Research</li>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+    <forcedTraits>
+      <li>
+        <def>DMC_SpardaBloodline</def>
+        <degree>0</degree>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+</Defs>

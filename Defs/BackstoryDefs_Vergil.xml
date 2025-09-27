@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- Vergil Childhood Backstory -->
+  <BackstoryDef>
+    <defName>DMC_VergilChildhood</defName>
+    <title>demon-born twin</title>
+    <titleShort>power seeker</titleShort>
+    <baseDesc>Born as the son of the legendary Dark Knight Sparda, [PAWN_nameDef] witnessed [PAWN_possessive] mother's death and blamed [PAWN_possessive] own weakness. Unlike [PAWN_possessive] twin brother, [PAWN_pronoun] became obsessed with obtaining power to never feel helpless again. [PAWN_pronoun] spent [PAWN_possessive] childhood in solitary training, rejecting social connections as distractions from [PAWN_possessive] pursuit of strength.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Childhood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>6</Melee>
+      <Shooting>3</Shooting>
+      <Intellectual>2</Intellectual>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+      <li>Art</li>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <!-- Vergil Adult Backstory -->
+  <BackstoryDef>
+    <defName>DMC_VergilAdult</defName>
+    <title>seeker of ultimate power</title>
+    <titleShort>dark slayer</titleShort>
+    <baseDesc>[PAWN_nameDef] pursued ultimate power at any cost, even splitting [PAWN_possessive] human and demon halves to achieve it. [PAWN_pronoun] mastered the legendary Yamato sword and developed spatial cutting techniques that can slice through dimensions. Though [PAWN_possessive] quest for power led to defeat and humiliation, [PAWN_pronoun] has learned to temper [PAWN_possessive] obsession with a newfound understanding of what truly matters. [PAWN_possessive] precision in combat is unmatched, but [PAWN_pronoun] remains cold and antisocial.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Adulthood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>8</Melee>
+      <Intellectual>4</Intellectual>
+      <Shooting>3</Shooting>
+      <Social>-6</Social>
+      <Artistic>-4</Artistic>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+      <li>Art</li>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+    <forcedTraits>
+      <li>
+        <def>DMC_DarkSlayer</def>
+        <degree>0</degree>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+</Defs>

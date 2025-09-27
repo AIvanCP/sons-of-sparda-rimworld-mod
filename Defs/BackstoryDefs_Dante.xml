@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <!-- Dante Childhood Backstory -->
+  <BackstoryDef>
+    <defName>DMC_DanteChildhood</defName>
+    <title>heir of sparda</title>
+    <titleShort>demon heir</titleShort>
+    <baseDesc>Born as the son of the legendary Dark Knight Sparda, [PAWN_nameDef] grew up with incredible natural fighting ability. Despite witnessing [PAWN_possessive] mother's death at a young age, [PAWN_pronoun] developed a carefree attitude to cope with trauma. [PAWN_pronoun] spent [PAWN_possessive] childhood perfecting combat skills while maintaining a love for pizza, rock music, and having fun.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Childhood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>5</Melee>
+      <Shooting>3</Shooting>
+      <Social>-2</Social>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+  </BackstoryDef>
+
+  <!-- Dante Adult Backstory -->
+  <BackstoryDef>
+    <defName>DMC_DanteAdult</defName>
+    <title>devil hunter legend</title>
+    <titleShort>devil hunter</titleShort>
+    <baseDesc>[PAWN_nameDef] established Devil May Cry, a demon hunting business that became legendary across the underworld. [PAWN_pronoun] has mastered multiple fighting styles including Swordmaster, Gunslinger, and Royal Guard. [PAWN_possessive] battles against [PAWN_possessive] twin brother and countless demons have forged [PAWN_objective] into an unstoppable force. Despite [PAWN_possessive] power, [PAWN_pronoun] remains irreverently casual and finds research and art boring compared to the thrill of combat.</baseDesc>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <slot>Adulthood</slot>
+    <shuffleable>false</shuffleable>
+    <spawnCategories>
+    </spawnCategories>
+    <skillGains>
+      <Melee>7</Melee>
+      <Shooting>5</Shooting>
+      <Construction>-3</Construction>
+    </skillGains>
+    <workDisables>
+      <li>Research</li>
+      <li>Art</li>
+    </workDisables>
+    <requiredWorkTags>
+    </requiredWorkTags>
+    <forcedTraits>
+      <li>
+        <def>DMC_SonOfSparda</def>
+        <degree>0</degree>
+      </li>
+    </forcedTraits>
+  </BackstoryDef>
+
+</Defs>

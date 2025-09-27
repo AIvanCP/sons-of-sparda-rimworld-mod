@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Son of Sparda Trait (Dante) -->
+  <TraitDef>
+    <defName>DMC_SonOfSparda</defName>
+    <commonality>0</commonality>
+    <label>son of sparda</label>
+    <description>The legendary bloodline of the Dark Knight Sparda. Combat comes naturally, but mundane work feels beneath one's station. Loves style, pizza, and having a good time, but becomes moody without proper recreation.</description>
+    <degreeDatas>
+      <li>
+        <label>son of sparda</label>
+        <description>The legendary blood of Sparda grants incredible combat prowess and resilience, but makes mundane work feel trivial. Craves excitement and good food.</description>
+        <degree>0</degree>
+        <skillGains>
+          <Melee>6</Melee>
+          <Shooting>4</Shooting>
+        </skillGains>
+        <workDisables>
+          <li>Research</li>
+          <li>Art</li>
+        </workDisables>
+        <statOffsets>
+          <SocialImpact>-3</SocialImpact>
+          <Beauty>5</Beauty>
+          <CarryingCapacity>15</CarryingCapacity>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.15</ArmorRating_Heat>
+          <ArmorRating_Electric>0.12</ArmorRating_Electric>
+        </statOffsets>
+        <statFactors>
+          <WorkSpeedGlobal>0.85</WorkSpeedGlobal>
+          <MoveSpeed>1.2</MoveSpeed>
+        </statFactors>
+        <hediffGivers>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_SpectralRegeneration</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_SonOfSpardaPower</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_EntitySlayer</hediff>
+            <ageDays>0</ageDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Wimp</li>
+      <li>Frail</li>
+      <li>SlowLearner</li>
+      <li>DMC_DarkSlayer</li>
+      <li>DMC_SpardaBloodline</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  <!-- Dark Slayer Trait (Vergil) -->
+  <TraitDef>
+    <defName>DMC_DarkSlayer</defName>
+    <commonality>0</commonality>
+    <label>dark slayer</label>
+    <description>Obsessed with power and perfection. Master of spatial cutting techniques and combat precision. Antisocial and cold, but learns combat skills with unmatched efficiency. Becomes unstable when not the strongest.</description>
+    <degreeDatas>
+      <li>
+        <label>dark slayer</label>
+        <description>The pursuit of ultimate power has consumed this being. Incredible combat mastery, but complete disregard for social niceties and 'lesser' pursuits.</description>
+        <degree>0</degree>
+        <skillGains>
+          <Melee>8</Melee>
+          <Shooting>3</Shooting>
+          <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+          <li>Social</li>
+          <li>Art</li>
+        </workDisables>
+        <statOffsets>
+          <SocialImpact>-6</SocialImpact>
+          <Beauty>8</Beauty>
+          <CarryingCapacity>20</CarryingCapacity>
+          <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.20</ArmorRating_Heat>
+          <ArmorRating_Electric>0.18</ArmorRating_Electric>
+          <MentalBreakThreshold>-0.3</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <WorkSpeedGlobal>1.15</WorkSpeedGlobal>
+          <MoveSpeed>1.4</MoveSpeed>
+          <LearningSensitivity>2.0</LearningSensitivity>
+        </statFactors>
+        <hediffGivers>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_SpectralRegeneration</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_DarkSlayerMastery</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_EntitySlayer</hediff>
+            <ageDays>0</ageDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Wimp</li>
+      <li>Frail</li>
+      <li>Kind</li>
+      <li>DMC_SonOfSparda</li>
+      <li>DMC_SpardaBloodline</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  <!-- Sparda Bloodline Trait (Nero) -->
+  <TraitDef>
+    <defName>DMC_SpardaBloodline</defName>
+    <commonality>0</commonality>
+    <label>sparda bloodline</label>
+    <description>Carries the diluted but potent blood of Sparda. More balanced than the direct heirs, retaining humanity while gaining demonic power. Emotional and protective, with a strong sense of justice.</description>
+    <degreeDatas>
+      <li>
+        <label>sparda bloodline</label>
+        <description>The blood of Sparda flows through this being's veins, though diluted. Grants enhanced abilities while maintaining more humanity than the direct heirs.</description>
+        <degree>0</degree>
+        <skillGains>
+          <Melee>5</Melee>
+          <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>
+          <li>Research</li>
+        </workDisables>
+        <statOffsets>
+          <SocialImpact>-2</SocialImpact>
+          <Beauty>3</Beauty>
+          <CarryingCapacity>12</CarryingCapacity>
+          <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.10</ArmorRating_Heat>
+          <ArmorRating_Electric>0.09</ArmorRating_Electric>
+          <MedicalTendQuality>0.15</MedicalTendQuality>
+        </statOffsets>
+        <statFactors>
+          <WorkSpeedGlobal>1.05</WorkSpeedGlobal>
+          <MoveSpeed>1.15</MoveSpeed>
+          <LearningSensitivity>1.3</LearningSensitivity>
+        </statFactors>
+        <hediffGivers>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_SpectralRegeneration</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_SpardaBloodline</hediff>
+            <ageDays>0</ageDays>
+          </li>
+          <li Class="HediffGiver_Birthday">
+            <hediff>DMC_EntitySlayer</hediff>
+            <ageDays>0</ageDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>Wimp</li>
+      <li>Frail</li>
+      <li>DMC_SonOfSparda</li>
+      <li>DMC_DarkSlayer</li>
+    </conflictingTraits>
+  </TraitDef>
+
+</Defs>

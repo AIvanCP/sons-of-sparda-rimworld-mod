@@ -1,0 +1,27 @@
+# RimWorld Mod specific
+*.cache
+*.tmp
+Temp/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~

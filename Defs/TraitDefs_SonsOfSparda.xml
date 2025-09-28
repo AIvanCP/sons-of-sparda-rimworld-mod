@@ -16,10 +16,6 @@
           <Melee>6</Melee>
           <Shooting>4</Shooting>
         </skillGains>
-        <workDisables>
-          <li>Research</li>
-          <li>Art</li>
-        </workDisables>
         <statOffsets>
           <!-- Only use SAFE vanilla stats -->
           <MeleeHitChance>0.25</MeleeHitChance>
@@ -67,10 +63,6 @@
           <Shooting>3</Shooting>
           <Intellectual>3</Intellectual>
         </skillGains>
-        <workDisables>
-          <li>Social</li>
-          <li>Art</li>
-        </workDisables>
         <statOffsets>
           <!-- Only SAFE vanilla stats -->
           <MeleeHitChance>0.35</MeleeHitChance>
@@ -118,9 +110,6 @@
           <Melee>5</Melee>
           <Shooting>3</Shooting>
         </skillGains>
-        <workDisables>
-          <li>Research</li>
-        </workDisables>
         <statOffsets>
           <!-- Only SAFE vanilla stats -->
           <MeleeHitChance>0.20</MeleeHitChance>

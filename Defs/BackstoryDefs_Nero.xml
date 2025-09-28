@@ -17,10 +17,7 @@
       <Shooting>2</Shooting>
       <Social>1</Social>
     </skillGains>
-    <workDisables>
-    </workDisables>
-    <requiredWorkTags>
-    </requiredWorkTags>
+
   </BackstoryDef>
 
   <!-- Nero Adult Backstory -->
@@ -41,10 +38,8 @@
       <Social>-2</Social>
     </skillGains>
     <workDisables>
-      <li>Research</li>
+      <li>Intellectual</li>
     </workDisables>
-    <requiredWorkTags>
-    </requiredWorkTags>
     <forcedTraits>
       <li>
         <def>DMC_SpardaBloodline</def>

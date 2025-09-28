@@ -17,10 +17,7 @@
       <Shooting>3</Shooting>
       <Social>-2</Social>
     </skillGains>
-    <workDisables>
-    </workDisables>
-    <requiredWorkTags>
-    </requiredWorkTags>
+
   </BackstoryDef>
 
   <!-- Dante Adult Backstory -->
@@ -40,11 +37,9 @@
       <Construction>-3</Construction>
     </skillGains>
     <workDisables>
-      <li>Research</li>
-      <li>Art</li>
+      <li>Intellectual</li>
+      <li>Artistic</li>
     </workDisables>
-    <requiredWorkTags>
-    </requiredWorkTags>
     <forcedTraits>
       <li>
         <def>DMC_SonOfSparda</def>

@@ -28,16 +28,5 @@ This mod is designed to be lore-accurate and appropriately powerful for player c
     <li>Ludeon.RimWorld.Ideology</li>
     <li>Ludeon.RimWorld.Biotech</li>
     <li>Ludeon.RimWorld.Odyssey</li>
-    <li>EdB.PrepareCarefully</li>
-    <li>CharacterEditor.base</li>
-    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-    <li>VanillaExpanded.VTraitsE</li>
-    <li>CETeam.CombatExtended</li>
-    <li>Dubwise.DubsBadHygiene</li>
-    <li>erdelf.HumanoidAlienRaces</li>
-    <li>RimWorldOfMagic.TorannMagic</li>
-    <li>AtlasTheTitan.AndroidTiers</li>
-    <li>sarg.rocketman</li>
-    <li>Zetrith.Multiplayer</li>
   </loadAfter>
 </ModMetaData>

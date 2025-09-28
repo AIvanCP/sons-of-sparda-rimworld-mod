@@ -119,6 +119,12 @@
           <ButcheryFleshEfficiency>1.15</ButcheryFleshEfficiency>
           <SurgerySuccessChance>1.10</SurgerySuccessChance>
           <FilthRate>0.85</FilthRate>
+          
+          <!-- Mod Compatibility Stats -->
+          <MeleeCritChance>0.15</MeleeCritChance>
+          <RangedCritChance>0.10</RangedCritChance>
+          <MeleeDodgeChance>0.20</MeleeDodgeChance>
+          <ShootingAccuracyFactor>1.15</ShootingAccuracyFactor>
         </statOffsets>
         <statFactors>
           <!-- Damage and Defense -->
@@ -219,6 +225,12 @@
           <SurgerySuccessChance>0.90</SurgerySuccessChance>
           <FilthRate>0.70</FilthRate>
           <TailoringSpeed>0.65</TailoringSpeed>
+          
+          <!-- Mod Compatibility Stats -->
+          <MeleeCritChance>0.25</MeleeCritChance>
+          <RangedCritChance>0.20</RangedCritChance>
+          <MeleeDodgeChance>0.35</MeleeDodgeChance>
+          <ShootingAccuracyFactor>1.25</ShootingAccuracyFactor>
         </statOffsets>
         <statFactors>
           <!-- Damage and Defense - Superior to Dante in pure combat -->
@@ -322,6 +334,12 @@
           <ButcheryFleshEfficiency>1.15</ButcheryFleshEfficiency>
           <SurgerySuccessChance>1.25</SurgerySuccessChance>
           <FilthRate>0.90</FilthRate>
+          
+          <!-- Mod Compatibility Stats -->
+          <MeleeCritChance>0.18</MeleeCritChance>
+          <RangedCritChance>0.12</RangedCritChance>
+          <MeleeDodgeChance>0.25</MeleeDodgeChance>
+          <ShootingAccuracyFactor>1.18</ShootingAccuracyFactor>
         </statOffsets>
         <statFactors>
           <!-- Damage and Defense - Moderate enhancements -->

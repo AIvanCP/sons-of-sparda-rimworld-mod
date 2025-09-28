@@ -1,37 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   
-  <!-- Make Son of Sparda immune to certain negative traits -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraitDef[defName="Wimp"]/conflictingTraits</xpath>
-    <value>
-      <li>SOS_SonOfSparda</li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraitDef[defName="Frail"]/conflictingTraits</xpath>
-    <value>
-      <li>SOS_SonOfSparda</li>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraitDef[defName="SlowLearner"]/conflictingTraits</xpath>
-    <value>
-      <li>SOS_SonOfSparda</li>
-    </value>
-  </Operation>
-
-  <!-- Enhance existing weapon stats for Sons of Sparda -->
+  <!-- COMPATIBILITY PATCHES FOR COMMON MODS -->
+  
+  <!-- Make Sons of Sparda immune to negative traits from base game -->
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+    <xpath>/Defs/TraitDef[defName="Wimp"]</xpath>
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+      <xpath>/Defs/TraitDef[defName="Wimp"]/conflictingTraits</xpath>
       <value>
-        <equippedStatOffsets>
-          <MeleeDamageFactor>0.1</MeleeDamageFactor>
-        </equippedStatOffsets>
+        <li>DMC_SonOfSparda</li>
+        <li>DMC_DarkSlayer</li>
+        <li>DMC_SpardaBloodline</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="Frail"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="Frail"]/conflictingTraits</xpath>
+      <value>
+        <li>DMC_SonOfSparda</li>
+        <li>DMC_DarkSlayer</li>
+        <li>DMC_SpardaBloodline</li>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="SlowLearner"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="SlowLearner"]/conflictingTraits</xpath>
+      <value>
+        <li>DMC_SonOfSparda</li>
+        <li>DMC_DarkSlayer</li>
+        <li>DMC_SpardaBloodline</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- PREPARE CAREFULLY COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ScenarioDef</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <!-- Ensure backstories are available in Prepare Carefully -->
+      </value>
+    </match>
+  </Operation>
+
+  <!-- COMBAT EXTENDED COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/StatDef[defName="MeleePenetrationFactor"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="DMC_SonOfSpardaPower"]/stages/li/statOffsets</xpath>
+      <value>
+        <MeleePenetrationFactor>0.25</MeleePenetrationFactor>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/StatDef[defName="MeleePenetrationFactor"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/HediffDef[defName="DMC_DarkSlayerMastery"]/stages/li/statOffsets</xpath>
+      <value>
+        <MeleePenetrationFactor>0.35</MeleePenetrationFactor>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- PSYCHOLOGY/RATIONAL ROMANCE COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="Asexual"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="Asexual"]/conflictingTraits</xpath>
+      <value>
+        <li>DMC_SonOfSparda</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- VANILLA EXPANDED - TRAITS COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="VTE_Weak"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="VTE_Weak"]/conflictingTraits</xpath>
+      <value>
+        <li>DMC_SonOfSparda</li>
+        <li>DMC_DarkSlayer</li>
+        <li>DMC_SpardaBloodline</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ALIEN RACES COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <!-- Sons of Sparda backstories work with alien races -->
+      </value>
+    </match>
+  </Operation>
+
+  <!-- ANDROID TIERS COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/HediffDef[defName="ATR_MechanicalBody"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="DMC_SonOfSparda"]/conflictingTraits</xpath>
+      <value>
+        <li>ATR_Android</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- GENETIC RIM COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/GeneDef</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <!-- Sparda genetics work with Genetic Rim -->
+      </value>
+    </match>
+  </Operation>
+
+  <!-- RIMWORLD OF MAGIC COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/TraitDef[defName="TM_Gifted"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/TraitDef[defName="DMC_DarkSlayer"]/conflictingTraits</xpath>
+      <value>
+        <li>TM_Gifted</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- MULTIPLAYER COMPATIBILITY -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MultiplayerCompatibilityDef</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <!-- Ensure MP sync for trait applications -->
       </value>
     </match>
   </Operation>

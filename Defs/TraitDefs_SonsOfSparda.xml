@@ -80,7 +80,7 @@
           <!-- Only SAFE vanilla factors -->
           <MoveSpeed>1.6</MoveSpeed>
           <WorkSpeedGlobal>1.2</WorkSpeedGlobal>
-          <LearningSensitivity>2.5</LearningSensitivity>
+          <GlobalLearningFactor>2.5</GlobalLearningFactor>
           <InjuryHealingFactor>4.0</InjuryHealingFactor>
           <ImmunityGainSpeed>3.0</ImmunityGainSpeed>
         </statFactors>
@@ -122,13 +122,13 @@
           <Beauty>3</Beauty>
           <CarryingCapacity>20</CarryingCapacity>
           <MentalBreakThreshold>-0.15</MentalBreakThreshold>
-          <MedicalTendQuality>0.20</MedicalTendQuality>
+          <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
         </statOffsets>
         <statFactors>
           <!-- Only SAFE vanilla factors -->
           <MoveSpeed>1.3</MoveSpeed>
           <WorkSpeedGlobal>1.1</WorkSpeedGlobal>
-          <LearningSensitivity>1.5</LearningSensitivity>
+          <GlobalLearningFactor>1.5</GlobalLearningFactor>
           <InjuryHealingFactor>2.5</InjuryHealingFactor>
           <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
         </statFactors>

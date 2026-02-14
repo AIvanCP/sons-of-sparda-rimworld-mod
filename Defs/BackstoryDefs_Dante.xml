@@ -10,14 +10,11 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Childhood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>5</Melee>
       <Shooting>3</Shooting>
       <Social>-2</Social>
     </skillGains>
-
   </BackstoryDef>
 
   <!-- Dante Adult Backstory -->
@@ -29,8 +26,6 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Adulthood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>7</Melee>
       <Shooting>5</Shooting>
@@ -41,10 +36,7 @@
       <li>Artistic</li>
     </workDisables>
     <forcedTraits>
-      <li>
-        <def>DMC_SonOfSparda</def>
-        <degree>0</degree>
-      </li>
+      <DMC_SonOfSparda>0</DMC_SonOfSparda>
     </forcedTraits>
   </BackstoryDef>
 

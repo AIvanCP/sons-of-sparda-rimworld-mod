@@ -10,14 +10,11 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Childhood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>4</Melee>
       <Shooting>2</Shooting>
       <Social>1</Social>
     </skillGains>
-
   </BackstoryDef>
 
   <!-- Nero Adult Backstory -->
@@ -29,8 +26,6 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Adulthood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>6</Melee>
       <Shooting>4</Shooting>
@@ -41,10 +36,7 @@
       <li>Intellectual</li>
     </workDisables>
     <forcedTraits>
-      <li>
-        <def>DMC_SpardaBloodline</def>
-        <degree>0</degree>
-      </li>
+      <DMC_SpardaBloodline>0</DMC_SpardaBloodline>
     </forcedTraits>
   </BackstoryDef>
 

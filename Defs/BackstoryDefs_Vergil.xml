@@ -10,13 +10,10 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Childhood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>6</Melee>
       <Shooting>3</Shooting>
       <Intellectual>2</Intellectual>
-      <Social>-3</Social>
     </skillGains>
     <workDisables>
       <li>Social</li>
@@ -33,8 +30,6 @@
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <slot>Adulthood</slot>
     <shuffleable>false</shuffleable>
-    <spawnCategories>
-    </spawnCategories>
     <skillGains>
       <Melee>8</Melee>
       <Intellectual>4</Intellectual>
@@ -47,10 +42,7 @@
       <li>Artistic</li>
     </workDisables>
     <forcedTraits>
-      <li>
-        <def>DMC_DarkSlayer</def>
-        <degree>0</degree>
-      </li>
+      <DMC_DarkSlayer>0</DMC_DarkSlayer>
     </forcedTraits>
   </BackstoryDef>
 

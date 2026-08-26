@@ -28,6 +28,11 @@
           <Beauty>5</Beauty>
           <CarryingCapacity>25</CarryingCapacity>
           <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+          <!-- Half-demon heritage: poison, toxic fallout and weather do not apply -->
+          <ToxicResistance>1.0</ToxicResistance>
+          <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+          <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+          <ComfyTemperatureMax>50</ComfyTemperatureMax>
         </statOffsets>
         <statFactors>
           <!-- Only use SAFE vanilla factors -->
@@ -75,6 +80,11 @@
           <Beauty>8</Beauty>
           <CarryingCapacity>30</CarryingCapacity>
           <MentalBreakThreshold>-0.40</MentalBreakThreshold>
+          <!-- Half-demon heritage: poison, toxic fallout and weather do not apply -->
+          <ToxicResistance>1.0</ToxicResistance>
+          <ToxicEnvironmentResistance>1.0</ToxicEnvironmentResistance>
+          <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+          <ComfyTemperatureMax>50</ComfyTemperatureMax>
         </statOffsets>
         <statFactors>
           <!-- Only SAFE vanilla factors -->
@@ -123,6 +133,12 @@
           <CarryingCapacity>20</CarryingCapacity>
           <MentalBreakThreshold>-0.15</MentalBreakThreshold>
           <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
+          <!-- Diluted Sparda blood: strong resistance, but not the full immunity
+               Dante and Vergil get -->
+          <ToxicResistance>0.75</ToxicResistance>
+          <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+          <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+          <ComfyTemperatureMax>30</ComfyTemperatureMax>
         </statOffsets>
         <statFactors>
           <!-- Only SAFE vanilla factors -->

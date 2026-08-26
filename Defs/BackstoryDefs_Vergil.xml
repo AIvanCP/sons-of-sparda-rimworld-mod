@@ -34,9 +34,11 @@
       <Melee>8</Melee>
       <Intellectual>4</Intellectual>
       <Shooting>3</Shooting>
-      <Social>-6</Social>
-      <Artistic>-4</Artistic>
     </skillGains>
+    <!-- Social and Artistic are fully disabled below, so granting negative skillGains for
+         those same two skills was a config error ("modifies skill X but also disables
+         this skill"). The workDisables already express Vergil's isolation - the redundant
+         negative gains are gone. -->
     <workDisables>
       <li>Social</li>
       <li>Artistic</li>
